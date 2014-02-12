@@ -7,14 +7,14 @@ Creates a ImageView with a circle and text that is displaying the persentage
 
 Its fully tested on iOS 7.
 
-All you have to do:
+###All you have to do
 
 1. Import the file in your class:
 ```objc
 #import "UIImageView+PersentageCircle.h"
 ```
 
-2. To show the circle on the right side of your UITableViewCell add the following to ``- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath``:
+2. To show the circle on the right side of your UITableViewCell add the following to ``- tableView: cellForRowAtIndexPath:``:
 ```objc
 UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
 cell.accessoryView = [view applyCircleWithPersentage:<#yourOwnPersentage#> andTintColor:[UIColor orangeColor];
