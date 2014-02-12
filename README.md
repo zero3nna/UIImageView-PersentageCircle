@@ -9,34 +9,33 @@ Its fully tested on iOS 7.
 
 ###All you have to do:
 
-<ol>
-<li>Import the file in your class:</li>
+
+####1. Import the file in your class:
 ```objc
 #import "UIImageView+PersentageCircle.h"
 ```
 
-<li>To show the circle on the right side of your UITableViewCell add the following to ``- tableView: cellForRowAtIndexPath:``:</li>
+####2. To show the circle on the right side of your UITableViewCell add the following to ``- tableView: cellForRowAtIndexPath:``:
 ```objc
 UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
 cell.accessoryView = [view applyCircleWithPersentage:<#yourOwnPersentage#> andTintColor:[UIColor orangeColor];
 ```
 
-<li>Or for the left side of the cell:</li>
+####3. Or for the left side of the cell:
 ```objc
 UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
 [view applyCircleWithPersentage:<#yourOwnPersentage#> andTintColor:[UIColor orangeColor];
 cell.imageView.image = view.image;
 ```
 
-<li>The last step is to change the height of the cells with:</li>
+####4. The last step is to change the height of the cells with:
 ```objc
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60.0f;
 }
 ```
 
-<li>Now you can customise the circle in ``UIImageView+PersentageCircle.m``</li>
-</ol>
+####5. Now you can customise the circle in ``UIImageView+PersentageCircle.m``.
 
 And now you should have your own percentage circle!
 
