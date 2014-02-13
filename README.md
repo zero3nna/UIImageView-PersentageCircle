@@ -39,7 +39,7 @@ cell.imageView.image = view.image;
 
 And now you should have your own percentage circle!
 
-A german tutorial is availabe soon under: [FudgeCode.de]
+A german tutorial is availabe on my blog: [FudgeCode.de]
 
 
-[FudgeCode.de]: http://www.fudgecode.de
+[FudgeCode.de]: http://www.fudgecode.de/2014/02/erstellen-einer-interessanten-prozentanzeige/
